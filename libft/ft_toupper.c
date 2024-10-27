@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_three.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jesroble <jesroble@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/13 15:42:36 by jesroble          #+#    #+#             */
-/*   Updated: 2024/03/19 14:45:43 by jesroble         ###   ########.fr       */
+/*   Created: 2023/11/28 09:20:35 by jesroble          #+#    #+#             */
+/*   Updated: 2023/12/06 17:42:57 by jesroble         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-void	sort_three(t_stack **a)
+int	ft_toupper(int c)
 {
-	t_stack	*biggest;
-
-	biggest = find_max(*a);
-	if (biggest == *a)
-		ra(a, true);
-	else if (biggest == (*a)->next)
-		rra(a, true);
-	if ((*a)->nbr > (*a)->next->nbr)
-		sa(a, true);
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c + ('A' - 'a');
+	}
+	return (c);
 }
+
+/* int	main(void)
+{
+	int	c = 'm';
+	char	n;
+
+	n = ft_toupper(c);
+	printf("%c", n);
+} */
