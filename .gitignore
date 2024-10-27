@@ -1,2 +1,14 @@
-libft
-printf
+# Ignora todo por defecto
+*
+
+# ¡Excepto las carpetas libft y printf!
+!libft/
+!printf/
+
+# Dentro de esas carpetas, ignora todos los archivos
+libft/*
+printf/*
+
+# ...pero permite que los archivos de las carpetas libft y printf se incluyan
+!libft/**
+!printf/**
